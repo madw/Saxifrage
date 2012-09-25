@@ -1,0 +1,36 @@
+div {
+	color: blue;
+	border: 5px solid black;
+	padding: 10px;
+	margin: 10px;
+}
+div.paddings {
+	padding: 30px 
+}
+div.borders {
+	border: 10px solid red;
+}
+div.margins {
+	margin: 25px;
+}
+div.BE {
+	display: block;
+}
+div.IE {
+	display: inline;
+	margin: 10px;
+}
+div.RE {
+	position: relative;
+	top: 5px;
+}
+img {
+	border: 5px solid green;
+	float: left;
+}
+div.AP {
+	color: red;
+	font-size: 30pt;
+	display: inline;
+	position: absolute;
+}
