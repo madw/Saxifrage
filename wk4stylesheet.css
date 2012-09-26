@@ -34,3 +34,6 @@ div.AP {
 	display: inline;
 	position: absolute;
 }
+span {
+	background-color: yellow;
+}
