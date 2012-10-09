@@ -1,3 +1,16 @@
+#!/usr/bin/env python
+
+# The "import" statement finds modules (whatever those are!) and defines names
+# in a namespace (whatever that is!):                                                                          
+#                                                                                                              
+#   http://docs.python.org/reference/simple_stmts.html#the-import-statement                                    
+#                                                                                                              
+# The "sys" module provides things related (apparently) to the interpreter
+# (whatever that is!):                                                                                         
+#                                                                                                              
+#   http://docs.python.org/library/sys.html
+
+#this opens the sys library
 import sys
 
 USAGE = "Usage: ./find.py word filename [filename]*"
