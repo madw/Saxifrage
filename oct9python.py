@@ -24,7 +24,7 @@ def fail(msg):
 
 try:
     word = sys.argv[1]
-# naked error, better than nothing, needs specificity    
+# naked error, better than nothing, needs specificity--IndexError    
 except:
     fail("Please provide a word to find.")
 
