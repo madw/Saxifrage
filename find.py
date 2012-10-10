@@ -34,6 +34,7 @@ if not filenames:
 
 for filename in filenames:
     try:
+        # file pointer is a file object
         file_pointer = open(filename)
         raise IOError
     except IOError:
