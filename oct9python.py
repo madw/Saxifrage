@@ -16,6 +16,7 @@ import sys
 USAGE = "Usage: ./find.py word filename [filename]*"
 
 def fail(msg):
+    # print chevron: the first expression after the >> must evaluate to a “file-like” object
     print >> sys.stderr, USAGE
     print >> sys.stderr, msg
     sys.exit()
