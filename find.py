@@ -40,7 +40,7 @@ for filename in filenames:
         # print chevron: the first expression after the >> must evaluate to a “file-like” object
         print >> sys.stderr, "Could not open file:", filename
         continue
-
+# file pointer is a file object
     for line in file_pointer:
         if word in line:
             print filename
