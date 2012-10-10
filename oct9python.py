@@ -27,7 +27,7 @@ try:
 # naked error, better than nothing, needs specificity--IndexError    
 except:
     fail("Please provide a word to find.")
-
+# slice indexing
 filenames = sys.argv[2:]
 if not filenames:
     fail("Please enter at least one filename.")
