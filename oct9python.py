@@ -18,12 +18,13 @@ USAGE = "Usage: ./find.py word filename [filename]*"
 def fail(msg):
     # print chevron: the first expression after the >> must evaluate to a “file-like” object
     print >> sys.stderr, USAGE
-    # sys = library, file, ...?
+    # sys = library, file, file-like object...?
     print >> sys.stderr, msg
     sys.exit()
 
 try:
     word = sys.argv[1]
+# naked error, better than nothing, needs specificity    
 except:
     fail("Please provide a word to find.")
 
