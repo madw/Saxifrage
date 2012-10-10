@@ -33,6 +33,7 @@ for filename in filenames:
     try:
         file_pointer = open(filename)
     except IOError:
+        # print chevron: the first expression after the >> must evaluate to a “file-like” object
         print >> sys.stderr, "Could not open file:", filename
         continue
 
