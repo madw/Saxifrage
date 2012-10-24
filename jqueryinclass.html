@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+		<style>
+			body {
+				margin: o;
+				padding: 24pt;
+				font: normal 12pt/14pt Arial;
+				background: red;
+			} 
+			#slot-window {
+				height: 14pt;
+				width: 25%;
+				overflow: hidden;
+				background: white;
+				position: relative;
+			}
+			#slot-wheel {
+				position: relative;
+				top: -14pt;
+			}
+		</style>
+		<script>
+		$(document).ready(function()
+		{
+			$('#slot-window').mouseover(function()
+			{
+				console.log("Easy peasy chickens are greasy")	
+			});
+		});
+		</script>
+	</head>
+	<body>
+		<div id="slot-window">
+			<div id="slot-wheel">
+				<div><span>I'm Feeling Doodley</span></div>
+				<div><span>I'm Feeling Artistic</span></div>
+				<div><span>I'm Feeling Hungry</span></div>
+				<div><span>I'm Feeling Puzzled</span></div>
+				<div><span>I'm Feeling Trendy</span></div>
+				<div><span>I'm Feeling Stellar</span></div>
+				<div><span>I'm Feeling Playful</span></div>
+				<div><span>I'm Feeling Wonderful</span></div>
+		</div>
+	</body>	
+</html>
