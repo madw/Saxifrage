@@ -1,0 +1,20 @@
+<script>
+
+	function first(i)
+	{
+		return Math.sqrt(i);
+	}
+
+	function second(i)
+	{
+		return Math.ceil(first(i));
+	}
+
+	function third(i)
+	{
+		return Math.random() * second(i);
+	}
+
+	console.log(third(10));
+
+</script>
