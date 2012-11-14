@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<style>
+	body {
+		margin: 0;
+		padding: 24px;
+		font:normal 12px/14px Arial, sans-serif;
+		background:gray;
+
+	}
+
+	#slot-window {
+		height:14px;
+		overflow:hidden;
+		position:relative;
+		border-style: solid;	
+	}
+
+	#slot-wheel {
+		position: relative;
+		top:-14px;
+		text-align: center;
+	}
+
+	#slot-wheel SPAN {
+		background-color: white;
+	}
+
+	</style>
+
+	<script>
+
+	$(document).ready(function()
+	{
+		$('#slot-window').mouseenter(function()
+		{	
+
+			var offset = Math.round(Math.random()*7)*14
+			console.log("hover on", offset)
+			var cssboom = {top: "-" + offset + "px"}
+
+			if (! window.animation_enter)
+			{
+				window.animation_enter = true;
+				$('#slot-wheel').animate(cssboom, "slow", "swing", function(){
+					window.animation_enter = false;
+				/*if (! window.animation_enter){
+					function showWidth(ele, w) {
+					$('#slot-wheel').text("The width for the " + ele + 
+                " is " + w + "px.");
+					$('#slot-wheel').animate(function(){
+						showWidth("slot-wheel", $('#slot-wheel')
+					});
+					});
+				
+				});
+*/
+			/*if (! window.animation_enter){
+					*/
+					console.log("yourule")
+					function showWidth(ele, w) {
+					$('#slot-wheel').text("The width for the " + ele + 
+                " is " + w + "px.");
+					$('#slot-wheel').animate(function(){
+						showWidth("slot-wheel", $('#slot-wheel')
+					});
+					});
+
+				});
+			});
+			}
+
+
+		});
+		if (! window.animation_leave)
+		$('#slot-window').mouseleave(function()
+		{
+			window.animation_leave = true;
+			var reset = {top: "0" + "px"}
+			$('#slot-wheel').animate(reset, "slow")
+			window.animation_leave = false;
+		});
+
+	});
+	</script>
+
+	</head>
+	<body>
+			<div id="slot-window">
+				<div id="slot-wheel">
+				<div><span>I'm Feeling Doodley</span></div>
+				<div><span>I'm Feeling Artistic</span></div>
+				<div><span>I'm Feeling Hungry</span></div>
+				<div><span>I'm Feeling Puzzled</span></div>
+				<div><span>I'm Feeling Trendy</span></div>
+				<div><span>I'm Feeling Stellar</span></div>
+				<div><span>I'm Feeling Playful</span></div>
+				<div><span>I'm Feeling Wonderful</span></div></div>
+</body>
+
+</html>
